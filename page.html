@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script src="perlin.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="map-container"></div>
+    <span>
+      <form id="coords-form" autocomplete="off">
+        <label for="startX">Start X:</label>
+        <input type="text" id="startX" name="startX" />
+        <br />
+        <label for="startY">Start Y:</label>
+        <input type="text" id="startY" name="startY" />
+        <br />
+        <label for="goalX">Goal X:</label>
+        <input type="text" id="goalX" name="goalX" />
+        <br />
+        <label for="goalY">Goal Y:</label>
+        <input type="text" id="goalY" name="goalY" />
+        <br />
+        <input type="submit" value="Find Path" />
+      </form>
+    </span>
+    <span>
+      <form id="map-form" autocomplete="off">
+        <label for="width">width:</label>
+        <input type="text" id="width" name="width" />
+        <br />
+        <label for="height">height:</label>
+        <input type="text" id="height" name="height" />
+        <br />
+        <label for="blockChance">Wall chance:</label>
+        <input type="text" id="blockChance" name="blockChance" />
+        <br />
+        <input type="submit" value="Generate Map" />
+      </form>
+    </span>
+    <span>
+      <form id="perlin-form" autocomplete="off">
+        <label for="zoom">Zoom:</label>
+        <input type="text" id="zoom" name="zoom" />
+        <br />
+        <input type="submit" value="Perlin Noise" />
+      </form>
+    </span>
+  </body>
+</html>
